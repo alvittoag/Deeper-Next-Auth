@@ -13,11 +13,11 @@ const Login = () => {
   }, [session]);
 
   const handleLogin = () => {
-    signIn("google", { callbackUrl: "/dashboard" });
+    signIn("google");
   };
 
   const handleLoginGit = () => {
-    signIn("github", { callbackUrl: "/dashboard" });
+    signIn("github");
   };
 
   return (
