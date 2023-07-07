@@ -16,9 +16,14 @@ const Login = () => {
     signIn("google", { callbackUrl: "/dashboard" });
   };
 
+  const handleLoginGit = () => {
+    signIn("github", { callbackUrl: "/dashboard" });
+  };
+
   return (
-    <div>
-      <button onClick={handleLogin}>Sign</button>
+    <div className="flex justify-center h-[100vh] items-center flex-col gap-10">
+      <button onClick={handleLogin}>Sign Google</button>
+      <button onClick={handleLoginGit}>Sign Github</button>
     </div>
   );
 };
